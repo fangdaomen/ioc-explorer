@@ -17,5 +17,11 @@ sleep 1'''
       }
     }
 
+    stage('stage') {
+      steps {
+        sh 'ls'
+      }
+    }
+
   }
 }
