@@ -11,5 +11,11 @@ sleep 1'''
       }
     }
 
+    stage('stage2') {
+      steps {
+        build(job: 'job2', propagate: true, quietPeriod: 1, wait: true)
+      }
+    }
+
   }
 }
